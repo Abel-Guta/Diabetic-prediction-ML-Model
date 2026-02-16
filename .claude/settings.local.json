@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /c \"py -c \"\"import joblib; model = joblib.load\\(''diabetes_model.sav''\\); scaler = joblib.load\\(''scaler.sav''\\); print\\(''Model:'', type\\(model\\).__name__\\); print\\(''Scaler:'', type\\(scaler\\).__name__\\); print\\(''Features:'', scaler.n_features_in_ if hasattr\\(scaler, ''n_features_in_''\\) else ''unknown''\\); print\\(''Feature names:'', list\\(scaler.feature_names_in_\\) if hasattr\\(scaler, ''feature_names_in_''\\) else ''not available''\\)\"\"\")",
+      "Bash(copy:*)",
+      "Bash(powershell:*)"
+    ]
+  }
+}
